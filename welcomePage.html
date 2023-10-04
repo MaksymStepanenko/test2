@@ -6,32 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" id="CDA_AAS">
-        window.cdaaas = window.cdaaas || {};
-        window.cdaaas.SETTINGS = window.cdaaas.SETTINGS || {};
-        window.cdaaas.PAGE_ANALYTICS_DATA = { "adsCount": 5, "channel": "desktop", "contentId": "c9a45272-b880-4908-9304-76f364238b6a", "contentType": "noticia", "elementCount": 18, "featuredElement": "", "imageCount": 1, "metadata": "wordCount=479\u0026wordCountRange=371 a 490\u0026multicontent-podcast=1\u0026comments=true\u0026summary=false", "pageType": "multi-content", "paragraphCount": 13, "serviceWorker": true, "videoCount": 3 };
-        window.cdaaas.helpers = window.cdaaas.helpers || {};
-        window.cdaaas.internals = {};
-        window.HorizonClient = new Promise((resolve, reject) => {
-            window.cdaaas.internals.resolveHorizonPromise = resolve;
-            window.cdaaas.internals.rejectHorizonPromise = reject;
-        });
 
-        window.HorizonHelpers = {
-            unloadCallbacks: [],
-        };
 
-        window.cdaaas.featureFlags = [];
-        window.cdaaas.hasFF = (ff) => window.cdaaas.featureFlags.includes(ff);
-
-        window.glbDebug = window.cdaaas.debugger = {
-            firstTick: Date.now(),
-            logs: [],
-            tick: () => Date.now() - window.cdaaas.debugger.firstTick,
-            logTick: (label) => window.cdaaas.debugger.logs.push({ [label]: window.cdaaas.debugger.tick() }),
-        };
-    </script><!-- Filers GCOM -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -39,308 +16,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 
 
-    <link rel="preconnect" href="https://s.glbimg.com">
-    <link rel="dns-prefetch" href="https://s.glbimg.com">
-    <link rel="preconnect" href="https://s2.glbimg.com">
-    <link rel="dns-prefetch" href="https://s2.glbimg.com">
-    <link rel="preconnect" href="https://s3.glbimg.com">
-    <link rel="dns-prefetch" href="https://s3.glbimg.com"><!-- Filers GCOM --><!-- Globo ID -->
-    <link rel="preconnect" href="https://cocoon.globo.com">
-    <link rel="dns-prefetch" href="https://cocoon.globo.com"><!-- Globo ID --><!-- Comercial -->
-    <link rel="preconnect" href="https://tags.globo.com">
-    <link rel="dns-prefetch" href="https://tags.globo.com">
-    <link rel="preconnect" href="https://tags.tiqcdn.com">
-    <link rel="dns-prefetch" href="https://tags.tiqcdn.com"><!-- Comercial -->
-    <link rel="preload"
-        href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-regular-normal.woff2"
-        as="font" crossorigin type="font/woff2">
-    <link rel="preload"
-        href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-semibold-normal.woff2"
-        as="font" crossorigin type="font/woff2">
-    <link rel="preload"
-        href="https://s3.glbimg.com/v1/AUTH_b922f1376f6c452e9bb337cc7d996a6e/codex/foundation/typefaces/opensans-bold-normal.woff2"
-        as="font" crossorigin type="font/woff2">
-    <link rel="preconnect" href="https://globo-ab.globo.com">
-    <link rel="dns-prefetch" href="https://globo-ab.globo.com">
-    <link rel="preconnect" href="https://horizon.globo.com">
-    <link rel="dns-prefetch" href="https://horizon.globo.com">
-    <link rel="preconnect" href="https://horizon-schemas.globo.com">
-    <link rel="dns-prefetch" href="https://horizon-schemas.globo.com">
-    <link rel="preconnect" href="https://horizon-track.globo.com">
-    <link rel="dns-prefetch" href="https://horizon-track.globo.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com"><!-- AMP PROJECT -->
-    <link rel="preconnect" href="https://cdn.ampproject.org">
-    <link rel="dns-prefetch" href="https://cdn.ampproject.org"><!-- PLAYER DE VIDEO -->
-    <link rel="preconnect" href="https://p.glbimg.com">
-    <link rel="dns-prefetch" href="https://p.glbimg.com"><!-- Estatico de Videos -->
-    <link rel="preconnect" href="https://s03.video.glbimg.com">
-    <link rel="dns-prefetch" href="https://s03.video.glbimg.com">
-    <link rel="preload" href="https://cdn.ampproject.org/v0.js" as="script">
-    <script async="async" id="gpt_js" type="text/javascript"
-        src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script type="text/javascript">
-        var gptadslots = [];
-        var googletag = googletag || { cmd: [] };
-    </script>
-    <script
-        src="//s3.glbimg.com/v1/AUTH_acd8438fd650434baa93efc372c066a1/libs/lib-pub-relay/g1/prod/lib-pub-relay-g1-latest.js"
-        defer></script>
-    <script>
-        window.utag_data = { "ad_custom_data": "tvg_pgStr=g1\/sp\/s\u00e3o paulo", "ad_site_page": "g1\/saopaulo", "ad_unit": "tvg_G1\/Sua_Regiao>Sudeste>Sao_Paulo", "bs_content_type": "noticia", "content_type": "materia", "cor_pagina": "#C4170C", "data_atualizacao": "Ate 3 meses", "data_publicacao": "Ate 3 meses", "dia_publicacao": "04-07-2023", "editoria": ["G1", "SP", "S\u00e3o Paulo"], "editoria_path": "sp\/sao-paulo", "editorias_secundarias": [], "ep": "False", "ext-bsafety": "conteudo seguro", "ext-advertiser": { "advertiser": ["colgate", "CEF", "apple", "unilever", "heineken"] }, "ext-ctx-mc": ["86", "27", "148", "13", "307", "189", "61", "166", "187", "80"], "ep_age_restriction": false, "page_name": "materia", "structure_tree": ["G1", "SP", "S\u00e3o Paulo"] };
-    </script>
-    <script>
-        window.utag_data.gtm_loaded = true;
-    </script><!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5PWZB8V');</script>
-    <link rel="icon"
-        href="https://s2-g1.glbimg.com/t2_E-_cSErv4fsbUVhwwEN0YMX0=/32x32/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="128x128"
-        href="https://s2-g1.glbimg.com/7_CSJ0a2BppGqptPkB7fE1Hacok=/128x128/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="152x152"
-        href="https://s2-g1.glbimg.com/szHLoTRvs6YWm9NNieGM7KU2eEE=/152x152/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="167x167"
-        href="https://s2-g1.glbimg.com/SU2Z6rs9rolyarVbXBSjaN6J0Jw=/167x167/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="180x180"
-        href="https://s2-g1.glbimg.com/S1o7u7ulLX54NM6X_pRUSid8yXg=/180x180/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="192x192"
-        href="https://s2-g1.glbimg.com/ANFXvAeR8V-2tbOMMP9tc2qFqJA=/192x192/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="icon" sizes="196x196"
-        href="https://s2-g1.glbimg.com/LsuKXSXhHyq6vHO3DX_fXzijkCg=/196x196/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="https://s2-g1.glbimg.com/GpmOCEG_6A1NUKWKtbzFpijsyR0=/57x57/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="https://s2-g1.glbimg.com/ntE_GO6uMpnPlZ2uD5ueQavJQNE=/72x72/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="https://s2-g1.glbimg.com/aFlLEuzGSYw2KtjvARZnCsFtgnk=/114x114/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png">
-    <!-- Facebook -->
-    <meta property="fb:pages"
-        content="180562885329138, 219182291443741, 116428248441032, 245000562218276, 192158074155314, 200292646669956, 182638081814153, 134115896703387, 131554330279675, 150737454992906, 159354314154963, 163750819397, 746858798714372, 246628845518037, 569361039814687, 252487748264782, 322744631148014, 718028201673172">
-    <meta property="fb:app_id" content="289255557788943"><!-- Twitter -->
-    <meta property="twitter:description"
-        content="Diretor de teatro está na UTI do Hospital das Clínicas em estado grave. Assessoria de imprensa do Teatro Oficina afirma que outros três moradores da casa, entre eles o ator Marcelo Drummond, marido de Zé Celso, estão em observação pela inalação de fumaça.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title"
-        content="Zé Celso é internado e entubado após incêndio atingir apartamento em que mora em SP; veja vídeo">
-    <meta property="twitter:image"
-        content="https://s2-g1.glbimg.com/R1D94Xk5G7_Do1XX-DkM1wYNo3o=/1200x/smart/filters:cover():strip_icc()/s01.video.glbimg.com/x720/11753964.jpg">
-    <title>Zé Celso é internado e entubado após incêndio atingir apartamento em que mora em SP; veja vídeo | São Paulo |
-        G1</title>
-    <meta name="title"
-        content="Zé Celso é internado e entubado após incêndio atingir apartamento em que mora em SP; veja vídeo">
-    <meta name="description"
-        content="Diretor de teatro está na UTI do Hospital das Clínicas em estado grave. Assessoria de imprensa do Teatro Oficina afirma que outros três moradores da casa, entre eles o ator Marcelo Drummond, marido de Zé Celso, estão em observação pela inalação de fumaça.">
-    <meta itemprop="image"
-        content="https://s2-g1.glbimg.com/R1D94Xk5G7_Do1XX-DkM1wYNo3o=/1200x/smart/filters:cover():strip_icc()/s01.video.glbimg.com/x720/11753964.jpg">
-    <meta itemprop="datePublished" content="2023-07-04T17:14:52.690Z">
-    <meta itemprop="dateModified" content="2023-07-06T12:54:12.799Z">
-    <link rel="canonical"
-        href="https://g1.globo.com/sp/sao-paulo/noticia/2023/07/04/ze-celso-e-internado-apos-incendio-atingir-apartamento-onde-mora-em-sp.ghtml">
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:description"
-        content="Diretor de teatro está na UTI do Hospital das Clínicas em estado grave. Assessoria de imprensa do Teatro Oficina afirma que outros três moradores da casa, entre eles o ator Marcelo Drummond, marido de Zé Celso, estão em observação pela inalação de fumaça.">
-    <meta property="og:title"
-        content="Zé Celso é internado e entubado após incêndio atingir apartamento em que mora em SP; veja vídeo">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="G1">
-    <meta property="og:image"
-        content="https://s2-g1.glbimg.com/R1D94Xk5G7_Do1XX-DkM1wYNo3o=/1200x/smart/filters:cover():strip_icc()/s01.video.glbimg.com/x720/11753964.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:url"
-        content="https://g1.globo.com/sp/sao-paulo/noticia/2023/07/04/ze-celso-e-internado-apos-incendio-atingir-apartamento-onde-mora-em-sp.ghtml">
-    <link rel="amphtml"
-        href="https://g1.globo.com/google/amp/sp/sao-paulo/noticia/2023/07/04/ze-celso-e-internado-apos-incendio-atingir-apartamento-onde-mora-em-sp.ghtml">
-    <meta name="robots" content="max-image-preview:large">
-    <script data-schema="Organization" type="application/ld+json">
-  {
-    "@type":"Organization",
-    "@context":"http://schema.org",
-    "name": "G1",
-    "url": "https://g1.globo.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://s.glbimg.com/jo/g1/static/live/g1_amp/img/g1_logo_json_ld.png",
-      "width": "94",
-      "height": "60"
-    },
-    "parentOrganization": {
-      "@type": "Organization",
-      "@id": "https://redeglobo.globo.com/",
-      "name": "Globo Comunicação e Participações S.A."
-    }
-  }
-</script>
-    <script id="globalWebdepsScript"
-        data-version="2.3.0">((() => (e, t = document, r = window.performance, n = !1) => {
-                const s = () => {
-                    let e, t
-                    return { p: new Promise((r, n) => { e = r, t = n }), s: e, j: t }
-                }
-                e.serverError && console.error(`[global-webdeps] Error\n${e.serverError}`)
-                const o = e => new Map(e.map(([e, t, r]) => [e, a({ name: e, url: t, detectionExpression: r })])), a = e => {
-                    const t = s(), r = t.p.then(() => c(e)), n = s(), o = i.then(() => n.p).then(() => l(e)).then(() => u(e).then(t => p(e, t))).catch(() => (t.s(), r))
-                    return Object.assign({}, e, { request: () => (n.s(), Promise.race([r, o])) })
-                }, i = new Promise(e => t.addEventListener("DOMContentLoaded", e)), l = ({ url: e }) => new Promise((r, n) => { [...t.scripts].find(t => (t.getAttribute("src") || t.getAttribute("data-src") || "//@").split("//")[1] === e.split("//")[1]) ? r() : n() }), c = ({ url: e }) => new Promise((r, n) => {
-                    const s = t.createElement("script")
-                    s.src = `${e}${e.includes("?") ? "&" : "?"}loading-agent=global-webdeps`, s.async = !0, s.onload = r, s.onerror = n, s.setAttribute("data-agent", "global-webdeps"), t.head.appendChild(s)
-                }), d = [], p = ({ name: e }, t) => {
-                    const o = t => `[global-webdeps] ${e} detection ${t}`, { p: a, s: i, j: l } = s()
-                    return d.push([i, l, t, () => { r.mark(o("end")), r.measure(o(), o("start"), o("end")) }, r.now(), e]), r.mark(o("start")), n || m(), a
-                }, m = () => {
-                    n = !0
-                    const e = r.now()
-                    let t, s = d.length
-                    for (; s--;)if (t = d.shift()) {
-                        const [r, n, s, a, i, l] = t
-                        let c
-                        try { c = s() } catch (o) { n(o) } !0 === c ? (a(), r()) : e - i > 6e4 ? (a(), n(Error(`[global-webdeps] Detection for "${l}" timed out`))) : d.push(t)
-                    } d.length ? setTimeout(m, 100) : n = !1
-                }, u = ({ name: e, detectionExpression: t }) => {
-                    let r, n
-                    "string" == typeof t && 0 !== t.length || (n = Error(`[global-webdeps] "${e}" hasn't a detection expression`))
-                    try { r = Function(`return ${t}`) } catch (s) { n = s } return new Promise((e, t) => { r ? e(r) : n && t(n) })
-                }, b = new Map([...o(e.ex), ...o(e.im)])
-                globalWebdeps = ((...e) => {
-                    const t = [...new Set(e)], r = t.filter(e => !b.get(e))
-                    return r.length ? Promise.reject(Error(`[global-webdeps] Unknown dependency(ies): ${r}`)) : Promise.all(t.map(e => {
-                        const t = b.get(e)
-                        return t ? t.request() : Promise.reject()
-                    }))
-                }), i.then(() => globalWebdeps(...e.im.map(([e]) => e)))
-            })()
-            )({ "ex": [["globoid-js", "https://s3.glbimg.com/v1/AUTH_3ed1877db4dd4c6b9b8f505e9d4fab03/globoid-js/v1.7.0/globoid-js.min.js", "window.glb != null && window.glb.globoIdClientMap != null"], ["clappr-detach-plugin", "https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/plugins/clappr-detach-plugin.js", "window.ClapprDetachPlugin && typeof window.ClapprDetachPlugin === 'function'"], ["globo-ab-v4", "https://s3.glbimg.com/v1/AUTH_da787d4f4e8d46e3ad76d5fa568fe786/globo-ab/latest/globo-ab.min.js", "typeof window.GloboAB !== 'undefined'"], ["clappr", "https://s3.glbimg.com/v1/AUTH_e1b09a2d222b4900a437a46914be81e5/web/player/stable/player.min.js", "typeof WP3 !== undefined && typeof Clappr !== undefined"], ["player-plugin-viewport", "https://s3.glbimg.com/v1/AUTH_05f06ca986b54d6e9c5df94927ccf7fc/libs/clappr-plugins/viewport-play/v1.1.4/viewport-play-plugin.js", "window.ViewportPlayPlugin && typeof ViewportPlayPlugin.default() === 'function'"], ["lightbox", "https://s3.glbimg.com/cdn/libs/gui-lightbox/1.6.3/js/gui.lightbox.min.js", "window.gui !== undefined "], ["video-player-abstractor", "https://s3.glbimg.com/v1/AUTH_448612afd5444aab9ff73ea54413fbd1/js/video-player-abstractor.umd.js", "typeof window.videoPlayer() !== undefined"], ["chartbeat", "https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/plugins/chartbeat/chartbeat-plugin.min.js", "window.ChartbeatPlugin && typeof window.ChartbeatPlugin === 'function'"], ["video-recommendation-plugin", "https://s3.glbimg.com/v1/AUTH_05f06ca986b54d6e9c5df94927ccf7fc/libs/clappr-plugins/video-recommendation/v2.2.1/video-recommendation-plugin.js", "window.VideoRecommendationPlugin && typeof window.VideoRecommendationPlugin === 'function'"], ["globo-rec", "https://s3.glbimg.com/v1/AUTH_448612afd5444aab9ff73ea54413fbd1/js/rec-lib.min.js", "typeof window.GloboRec !== \"undefined\""], ["entretenimento-ui-beta", "https://s3.glbimg.qa.globoi.com/v1/AUTH_9a61668712cd4619a591f7d7f06a8c47/libs/entretenimento-ui.js", "window.EntretenimentoUI !== undefined"], ["receitas-ui", "https://s3.glbimg.com/v1/AUTH_dc78b47e64fc4dbc9bbcfa54b0888117/libs/receitas-ui.js", "window.ReceitasUI !== undefined"], ["horizon-client-v1", "https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/libs/horizon/1.10.0/globocom-horizon.min.js", "!!window.horizon"], ["raven", "https://cdn.ravenjs.com/3.19.1/raven.min.js", "typeof window.Raven === 'function'"], ["player", "https://s3.glbimg.com/v1/AUTH_e1b09a2d222b4900a437a46914be81e5/api/stable/web/api.min.js", "window.WM && typeof WM.Player === 'function'"], ["preact", "https://s3.glbimg.com/v1/AUTH_47600d3497184478b773a886f1305b22/libs/preact.js", "window.Preact !== undefined"], ["entretenimento-ui", "https://s3.glbimg.com/v1/AUTH_47600d3497184478b773a886f1305b22/libs/entretenimento-ui.js", "window.EntretenimentoUI !== undefined"], ["pow", "https://royale.globo.com/assets/pow/3.0.0/bundle.js", "window.pow !== undefined"], ["hcaptcha", "https://hcaptcha.com/1/api.js?hl=pt-BR&render=explicit&onload=hcaptchaLoad", "window.hcaptcha !== undefined"], ["globo-captcha", "https://captcha.globo.com/widget.js", "window.GloboCaptcha !== undefined"], ["amp-social-share", "https://cdn.ampproject.org/v0/amp-social-share-0.1.js", "window.__AMP_SERVICES[\"amp-social-share\"] !== undefined"], ["amp", "https://cdn.ampproject.org/v0.js", "window.AMP !== undefined"], ["recaptcha", "https://www.google.com/recaptcha/api.js?render=explicit", "window.grecaptcha !== undefined"], ["cadun", "https://s.glbimg.com/pc/ca/cadun.js", "window.Cadun !== undefined || window.Cadun.user !== undefined || window.Cadun.user.me !== undefined"]], "im": [["globo-ab-34", "https://s3.glbimg.com/v1/AUTH_da787d4f4e8d46e3ad76d5fa568fe786/globo-ab/3.4.0/globo-ab.min.js", "typeof window.GloboAB34 === 'function'"], ["globo-ab-v2", "https://s3.glbimg.com/v1/AUTH_da787d4f4e8d46e3ad76d5fa568fe786/globo-ab/globo-ab-v2.min.js", "typeof window.globoAB !== 'undefined'"], ["globo-ab", "https://s3.glbimg.com/v1/AUTH_da787d4f4e8d46e3ad76d5fa568fe786/globo-ab/3.0/globo-ab.min.js", "typeof window.GloboAB === 'function'"]] })</script>
-    <script type="text/javascript" id="SETTINGS">
-        window.glb = window.glb || {};
-        window.glb.barra = { "exibeAssineJa": true, "incluirSawpf": true, "itemCustomizado": { "cor": "", "texto": "", "url": "", "imagem": "" }, "exibeCentral": false };
-        window.glb.getCurrentEnv = () => "prod";
 
-        window.cdaaas = window.cdaaas || {};
-        window.cdaaas.SETTINGS = {
-            MOBILE_GROUP: "desktop",
-            ENV: "prod",
-            CHANNEL: "desktop",
-            CANONICAL_URL: "https://g1.globo.com/sp/sao-paulo/noticia/2023/07/04/ze-celso-e-internado-apos-incendio-atingir-apartamento-onde-mora-em-sp.ghtml",
-            TEMPLATE_TYPE: "multicontent",
-            TITLE: "Zé Celso é internado e entubado após incêndio atingir apartamento em que mora em SP; veja vídeo",
-            SITE_ID: "g1",
-            SITE_NAME: "G1",
-            COR: "#c4170c",
-            WEBMEDIA_ENV: "prod",
-            CATEGORIAS: [
-                "materia",
-                "multi-content",
-                "sp/sao-paulo",
-            ],
 
-            PRODUCT_UA: "UA-296593-3",
-            TAG_MANAGER_STRUCTURE_TREE: '["G1", "SP", "São Paulo"]',
-            TAG_MANAGER_PAGE_NAME: "materia",
-            TAG_MANAGER_SITE_PAGE: 'g1/saopaulo/materias',
-            TAG_MANAGER_AD_UNIT: 'tvg_G1/Sua_Regiao>Sudeste>Sao_Paulo',
-            TAG_MANAGER_AD_CUSTOM_DATA: "tvg_pgStr=g1/sp/são paulo",
-            TAG_MANAGER_AD_EXTRAS: "generica%3Dze-celso,proposito%3Duserneed-informar", BRANDED_CONTENT: false, ZONE_ID: "110461", VIEW_COMMENTS: true,
-            HOST_COMENTARIOS: "https://comentarios.globo.com",
-            COMENTARIOS_URI: "/jornalismo/g1/sp/sao-paulo", COMENTARIOS_IDEXTERNO: "multi-content/c9a45272-b880-4908-9304-76f364238b6a", HOST_WEBMEDIA: "https://s.videos.globo.com",
-            AB_VERSION: "",
-            AB_ROUTE_PAGEVIEW: "https://globo-ab.globo.com/ab/",
-            AB_TEST_NAME: "",
-            AB_ROUTE_CONVERT: "https://globo-ab.globo.com/convert/",
-            FACEBOOK_APP_ID: "289255557788943",
-            REALTIME_PAGEVIEW: "https://s.glbimg.com/bu/rt/js/glb%2Dpv%2Dmin.js",
-            PLAYER: {
-                OPTIONS: {
-                    adUnit: "tvg_G1\/Sua_Regiao\u003eSudeste\u003eSao_Paulo",
-                    adCmsId: "11413",
-                    adAccountId: "95377733",
-                    adCustomData: "tvg_pgStr=g1\/sp\/s\u00e3o paulo" + "&ambient=web",
-                    daxExtras: { ambient: "web" }
-                },
-                ASYNC_OPTIONS: {
-                    adCustomData: undefined,
-                }
-            },
-            RESOURCE_ID: "c9a45272-b880-4908-9304-76f364238b6a",
-            OIDC: {
-                CLIENT_ID: "g1-web@apps.globoid",
-                REDIRECT_URL: "https://g1.globo.com/callback.html",
-                URL: "https://id.globo.com/auth",
-                REALM: "globo.com"
-            },
-            CHARTBEAT: {
-                ACCOUNT_ID: "65728",
-                DOMAIN: "g1.globo.com"
-            }
-        };
-    </script>
-    <script>
-        cdaaas = window.cdaaas || {};
-        settings = {
-            ...cdaaas.SETTINGS || {},
-            TAG_MANAGER_AD_CMS_ID: "11413",
-            TAG_MANAGER_AD_ACCOUNT_ID: "95377733",
 
-            AB_PRODUCT_NAME: "",
-            AB_EXPERIMENT_NAME: "",
-            AB_ISOLATION_NAME: "",
-            RESOURCE: {
-                MODIFIED: "2023-07-06T12:54:12.799Z",
-                ISSUED: "2023-07-04T17:14:52.690Z",
-                ID: "c9a45272-b880-4908-9304-76f364238b6a"
-            },
-            IS_PREVIEW: false,
-            HAS_FEATURED_IMAGE: false,
-            HAS_SUMMARY: false,
-            HAS_MICRONAVIGATION: false,
-            FF_SUMMARY_VERSION: 4,
-            HAS_UX2023_THEME: true,
-            FF_UX2023_THEME_VERSION: 3,
-            MULTICONTENT: {
-                BUTTON_READ_MORE: {
-                    VISIBLE: true,
-                    LABEL: "Veja Mais",
-                    MIN_LIMIT: 5,
-                    POSITION: 2
-                }
-            },
-        }
 
-        window.cdaaas.SETTINGS = settings;
-        window.cdaaas.SETTINGS.HZ_TRACKER_ENABLED = !settings.IS_PREVIEW && settings.SITE_ID;
-        //window.cdaaas.SETTINGS.HZ_TRACKER_ENABLED = true
 
-        window.cdaaas.SETTINGS.PLATFORM_FROM_CHANNEL = settings.CHANNEL === 'smart' ? 'mobile' : settings.CHANNEL;
-    </script>
-    <script>
-        var glb = glb || {};
-        glb.fnBuscaUrl = "g1.globo.com/busca";
-    </script>
-    <script id="SETTINGS">
-        cdaaas = window.cdaaas || {};
-        cdaaas.SETTINGS = {
-            HAS_GLOBOPAGE: true,
-            HAS_SCROLLSPY: true,
-            HAS_FEATURE_FLAG_SECTION: true,
-            ...cdaaas.SETTINGS,
-            SERVICE_WORKER: {
-                url: "https://g1.globo.com/sw.js",
-                active: true
-            }
-        }
-    </script>
-    <script>
-        window.glbFeatFlagConfig = { "clientUrl": "https:\/\/s3.glbimg.com\/v1\/AUTH_f75bb4776e3c4683acd769d47144995f\/feature-flag-client\/2.6.1\/featFlagClient.min.js", "clientInitUrl": "https:\/\/s3.glbimg.com\/v1\/AUTH_f75bb4776e3c4683acd769d47144995f\/feature-flag-client\/2.6.1\/featFlagClientInit.min.js", "tenantId": "g1", "category": "fd80c213-0574-418c-90ae-1d14c2f438b9", "clientVersion": "2.6.1", "env": "prod", "features": [{ "name": "g1Ux2023ThemeV3", "id": "g1Ux2023ThemeMcV3", "disabled": false, "label": "g1 ux2023 theme v3", "contentCondition": "window.cdaaas.SETTINGS.HAS_UX2023_THEME", "ffCondition": "window.cdaaas.SETTINGS.FF_UX2023_THEME_VERSION === 3", "activationConfig": { "hasLazyEnable": true, "enableType": "globoab", "cookieName": "g1ux23themev3", "classFFBase": "glb-ff-ux23theme" }, "states": [{ "nm": "classic", "si": 0, "ab": "control", "classes": ["glb-theme-classic", "glb-layout-classic", "glb-theme-elem-sharebar--default", "glb-layout-elem-content-blockquote--default", "glb-theme-elem-content-blockquote--default", "glb-layout-elem-quote--default", "glb-theme-elem-quote--default"], "isRemClasses": true }, { "nm": "ux2023", "si": 1, "ab": "new-design", "classes": ["glb-theme-ux2023", "glb-layout-ux2023", "glb-theme-elem-sharebar--touch", "glb-layout-elem-content-blockquote--box", "glb-theme-elem-content-blockquote--box", "glb-layout-elem-quote--card", "glb-theme-elem-quote--card"], "isRemClasses": true }], "abConfig": { "experimentName": "g1-layout-2023-mc-design-v3", "events": true } }, { "name": "g1Ux2023ThemeShape", "id": "g1Ux2023ThemeShapeV3", "disabled": false, "label": "g1 ux2023 theme shape v3", "enabled": true, "stateIndex": 1, "states": [{ "nm": "featsClassic", "si": 0, "classes": ["glb-theme-shape--cut", "glb-theme-feat-border--default", "glb-theme-feat-image--default"], "isRemClasses": true }, { "nm": "featsUX2023", "si": 1, "classes": ["glb-theme-shape--rounded", "glb-theme--force-style-posts", "glb-theme-feat-border--curve"], "isRemClasses": true }, { "nm": "featsUX2023ImgCard", "si": 2, "classes": ["glb-theme-shape--rounded", "glb-theme--force-style-posts", "glb-theme-feat-border--curve", "glb-theme-feat-image--card"], "isRemClasses": true }] }, { "name": "g1McMicronavegacaoV2", "id": "g1Feature2023Micronavigation", "disabled": false, "label": "micronavegacao v2", "ffCondition": "window.cdaaas.SETTINGS.HAS_MICRONAVIGATION", "contentCondition": "window.cdaaas.SETTINGS.HAS_MICRONAVIGATION", "activationConfig": { "hasLazyEnable": true, "enableType": "globoab", "cookieName": "g1micronavigationv2", "classFFBase": "glb-feat-micronavigation" }, "states": [{ "si": 0, "ab": "control" }, { "si": 1, "ab": "micronavigation" }], "abConfig": { "experimentName": "g1-layout-2023-mc-micronavigation-v2", "events": true }, "trackingConfig": { "hasTrackingForPage": true } }, { "name": "g1AutoNextAndNextArticleV4", "id": "g1Feature2023NextArticle", "disabled": false, "label": "autoNext-NextArticle v4", "activationConfig": { "enableType": "globoab", "classFFBase": "glb-feat-nextArticleV4" }, "states": [{ "si": 0, "ab": "control" }, { "si": 1, "ab": "pop-next" }, { "si": 2, "ab": "fixed-next" }], "abConfig": { "experimentName": "g1-layout-2023-mc-autonext-v4", "events": false } }, { "name": "g1McMaisLidasV1", "id": "g1Feature2023MostRead", "disabled": false, "label": "mais lidas v1", "activationConfig": { "enableType": "globoab", "classFFBase": "glb-feat-most-read" }, "states": [{ "si": 0, "ab": "control" }, { "si": 1, "ab": "most-read" }], "abConfig": { "experimentName": "g1-layout-2023-mc-most-read-v1", "events": false } }, { "name": "g1MenuJogosV1", "id": "g1MenuJogosV1", "disabled": false, "label": "menu section Jogos", "enabled": true, "stateIndex": 1, "activationConfig": { "enableType": "cma", "applyType": "ASSET" }, "states": [{ "nm": "noAsset", "si": 0 }, { "nm": "assetV1.0.0", "si": 1, "assets": [{ "url": "https:\/\/s3.glbimg.com\/v1\/AUTH_f75bb4776e3c4683acd769d47144995f\/menu-customizer\/1.0.0\/glbMenuCustomizerRunJogosLabel.min.js" }] }] }, { "name": "webWidgetLauncher", "id": "webWidgetLauncher", "disabled": false, "label": "web widget launcher", "enabled": true, "stateIndex": 1, "activationConfig": { "enableType": "cma", "applyType": "ASSET" }, "states": [{ "nm": "noAsset", "si": 0 }, { "nm": "assetV1.7.0", "si": 1, "assets": [{ "url": "https:\/\/s3.glbimg.com\/v1\/AUTH_f75bb4776e3c4683acd769d47144995f\/tools\/widget-launcher\/1.7.0\/widgetLauncherInit.min.js" }] }] }] };
-        window.glbFeatFlagConfig.isPreview = globalThis.cdaaas.SETTINGS.IS_PREVIEW && !window.glb.getCurrentEnv().includes('sandbox');
-    </script>
-    <script
-        id="featFlagClientEmbedded"> (() => { "use strict"; var e = "enabled", t = "disabled", a = "THEME", i = [{ name: "banner_materia1", abbr: "materia1" }], n = function (e) { var t, a; return void 0 === e && (e = {}), (null == (t = e.activationConfig) ? void 0 : t.persistName) || (null == (a = e.activationConfig) ? void 0 : a.cookieName) }, o = e => { e.activationConfig || (e.activationConfig = {}), e.activationConfig.hasLazyEnable = !1, e.activationConfig.enableType = "cma" }, s = e => null != e, r = "glb-ff-force", l = "glbFeatFlagForce", d = function (e, t) { void 0 === t && (t = 0), function (e, t) { var a; return void 0 === e && (e = {}), void 0 === t && (t = 0), null == (a = e.states) ? void 0 : a.find((e => e.si === t)) }(e, t) && (o(e), e.abConfig = void 0, e.trackingConfig = void 0, e.enabled = t > 0, e.stateIndex = t, e.isForce = !0) }, c = e => "" + l + e.toLowerCase(), g = () => { var e, t, a = (() => { var e, t, a = (void 0 === t && (t = globalThis.location.href), new URLSearchParams(new URL(t).search)); if (a.has(r)) { var i = a.get("glb-ff-state"); e = { ff: a.get(r), stateIndex: s(i) ? parseInt(i, 10) : 1, isPersist: a.has("glb-ff-force-persist"), isRemove: a.has("glb-ff-force-remove"), isRemoveAll: a.has("glb-ff-force-remove-all") } } return e })(); return a && (a.isRemoveAll ? (t = [], Object.keys(globalThis.localStorage).forEach((e => { e.includes(l) && (t.push(e), globalThis.localStorage.removeItem(e)) })), a = null) : a.isRemove ? ((e = a.ff) && globalThis.localStorage.removeItem(c(e)), a = null) : a.isPersist && (function (e, t) { void 0 === t && (t = 1), e && globalThis.localStorage.setItem(c(e), t) }(a.ff, a.stateIndex), a = null)), a }; function f() { return f = Object.assign ? Object.assign.bind() : function (e) { for (var t = 1; t < arguments.length; t++) { var a = arguments[t]; for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]) } return e }, f.apply(this, arguments) } var v = e => () => { var t, a = new Function("return " + e); try { t = a() } catch (e) { console.error(e) } return t }, u = (e, t) => { var a; return (null == e || null == (a = e.activationConfig) ? void 0 : a.enableType) === t }, h = (e, t) => u(e, "globoab") && e.abConfig && (!t || t === e.abConfig.experimentName), b = i => { var o, r, l, d, c, g = void 0 === i.stateIndex ? 0 : i.stateIndex; if (i.disabled) return g; if (function (e) { return void 0 === e && (e = {}), n(e) && (h(e) || u(e, "runtime")) }(i)) { var f = (r = n(i), c = globalThis.localStorage.getItem(r), s(c) || (l = r, c = (d = document.cookie.match(new RegExp("(?:^|; )" + l.replace(/([.$?*|{}()[]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(d[1]) : void 0), c); s(f) && (g = Number(f)), i.enabled = g > 0, i.stateIndex = g, i.state.resolved = !0 } else h(i) && !u(i, "cma") || (i.state.resolved = !0); if (null != (o = i.actions) && o.checkOnInit) { var v, b = null == (v = i.actions) ? void 0 : v.checkOnInit(); i.enabled = b > 0, i.stateIndex = Number.isInteger(b) && b >= 0 ? b : 0, i.state.resolved = !0 } return (i => { !i.state.applied && i.state.resolved && function (e) { var t; return void 0 === e && (e = {}), (null == (t = e.activationConfig) ? void 0 : t.applyType) || a }(i) === a && ((a => { var i = (a => { var i = function (e) { var t; return void 0 === e && (e = {}), null == (t = e.activationConfig) ? void 0 : t.classFFBase }(a), n = [], o = []; i && (n.push(i + "--" + (a.enabled ? e : t)), o.push(i + "--" + (a.enabled ? t : e)), n.push(i + "--st-" + a.stateIndex)); var s = (e => e.states.find((t => t.si === e.stateIndex)))(a) || {}, r = (e => e.states.filter((t => t.si !== e.stateIndex)))(a); if (s.classes && n.push(...s.classes), r && (i && r.forEach((e => o.push(i + "--st-" + e.si))), s.isRemClasses)) { var l = [...new Set(r.reduce(((e, t) => [...e, ...t.classes || []]), []))]; l && o.push(...l) } return { classesToAdd: n, classesToRem: o } })(a); i.classesToRem && i.classesToRem.forEach((e => { return t = e, document.documentElement.classList.remove(t); var t })), i.classesToAdd && i.classesToAdd.forEach((e => { return t = e, document.documentElement.classList.add(t); var t })) })(i), (e => { e.state.applied = !0, e.promiseConfig.resolve(e.stateIndex) })(i)) })(i), g }, C = function (e, t) { var a, { isPreview: i = !1, dependsOnList: n = [] } = void 0 === t ? {} : t; return e && e.name && ((e => { e.activationConfig || (e.activationConfig = {}, o(e)) })(a = f({}, e)), a.state = {}, a.promiseConfig = {}, a.promiseConfig.promise = new Promise(((e, t) => { a.promiseConfig.resolve = e, a.promiseConfig.reject = t })), a.actions = {}, a.actions.hasContent = () => !0, a.actions.hasFeatFlagCondition = () => !0, a.contentCondition && (a.actions.hasContent = v(a.contentCondition)), a.ffCondition && (a.actions.hasFeatFlagCondition = v(a.ffCondition)), a.activationConfig.initCondition && (a.actions.checkOnInit = v(a.activationConfig.initCondition)), !a.actions.hasFeatFlagCondition() || function (e) { return void 0 === e && (e = []), e.length && !e.find((e => !e.disabled)) }(n) ? (a.disabled = !0, d(a, 0)) : i && h(a) && d(a, 1), b(a)), a }; function m() { return m = Object.assign ? Object.assign.bind() : function (e) { for (var t = 1; t < arguments.length; t++) { var a = arguments[t]; for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]) } return e }, m.apply(this, arguments) } try { var p = globalThis.glbFeatFlagConfig || {}, F = { isPreview: p.isPreview }; globalThis.glbFeatFlagClient = new class { constructor(e, t) { var a = this, { isPreview: i = !1 } = void 0 === e ? {} : e; void 0 === t && (t = void 0), this.getFFConfig = e => this.featureFlagList.find((t => t.name === e)), this.addFeatureFlagsConfig = function (e) { void 0 === e && (e = []); var t = []; e.forEach((e => { a.getFFConfig(e.name) || (e.dependsOn && e.dependsOn.length ? t.push(e) : a.featureFlagList.push(C(e, a.options))) })), t.forEach((e => { var t = e.dependsOn.map((e => a.getFFConfig(e))); a.featureFlagList.push(C(e, m({}, a.options, { dependsOnList: t }))) })) }, this.featureFlagList = [], this.started = !1, this.options = { isPreview: i }, t && (this.featureFlagList = t.featureFlagList, this.options = m({}, this.options, t.options), this.started = t.started) } getFeatureFlag(e) { var t = this.getFFConfig(e); return t ? t.promiseConfig.promise : Promise.reject(new Error("notFound")) } init(e) { void 0 === e && (e = {}), function (e) { void 0 === e && (e = []); var t = g(); e.forEach((e => ((e, t) => { var a, i, n; t && t.ff.toLowerCase() === e.id.toLowerCase() ? a = t.stateIndex : (n = (i = e.id) ? globalThis.localStorage.getItem(c(i)) : void 0, a = s(n) ? parseInt(n, 10) : void 0), Number.isInteger(a) && d(e, a) })(e, t))) }(e.features), this.addFeatureFlagsConfig(e.features), this.started = !0, this.setupAdMetadataForPageTracking(), document.dispatchEvent(new CustomEvent("glb.featureFlag.init")) } getAdCustomAttrs(e) { return function (e, t) { var a; return void 0 === t && (t = []), t.forEach((t => { var { adPositions: n, adCustomAttrPrefix: o } = t.trackingConfig || {}; if ((n || []).includes(e) && t.state.resolved) { var s = t.actions.hasContent(), r = (e => { var t = i.find((t => t.name === e)); return t ? t.abbr : e })(e), l = "c" + (s ? "1" : "0") + "_f" + t.stateIndex + "_" + r; a || (a = {}), a[o] = l } })), a }(e, this.featureFlagList) } convertAbFlag(e) { var t = this.getFFConfig(e); t && t.abConfig && (t.abConfig.sendConversion ? t.abConfig.sendConversion() : t.abConfig.conversionNeeded = !0) } getFeatureFlagForAdPageTracking() { return this.featureFlagList.filter((e => { var t; return (null == e || null == (t = e.trackingConfig) ? void 0 : t.hasTrackingForPage) && !(null != e && e.disabled) })) } setupAdMetadataForPageTracking() { var e = this.getFeatureFlagForAdPageTracking(); if (globalThis.cdaaas && e.length) { var t = e[0]; globalThis.cdaaas.SETTINGS.AD_AB_TEST = { enabled: t.enabled && t.actions.hasContent() } } } }(F), globalThis.glbFeatFlagClient.init(p) } catch (e) { console.error(e) } })();</script>
     <style>
         :root {
             --glb-primary-color: #c4170c;
@@ -398,11 +78,6 @@
         }
     </style>
     <style>
-        /**
- * Do not edit directly
- * Generated on Tue, 21 Dec 2021 20:40:17 GMT
- */
-
         :root {
             --spacing-10: 4px;
             --spacing-20: 8px;
@@ -606,49 +281,15 @@
             fill: #C4170C
         }
     </style><!-- manifest -->
-    <script>(() => { "use strict"; var n = window.HorizonClient, o = function () { return void 0 !== window.navigator.connection }; !function () { try { var e = window.navigator, r = e.deviceMemory, i = e.hardwareConcurrency, a = !!window.navigator.serviceWorker && "activated" === (null === (u = window.navigator.serviceWorker.controller) || void 0 === u ? void 0 : u.state), t = o() ? window.navigator.connection.saveData : null, c = o() ? window.navigator.connection.effectiveType : null, w = o() ? window.navigator.connection.rtt : null, d = o() ? window.navigator.connection.downlink : null, l = "indefinido"; window.utag_data.bs_userpower_connection_saveData = null != t ? t : l, window.utag_data.bs_userpower_connection_connectionType = null != c ? c : l, window.utag_data.bs_userpower_connection_rtt = null != w ? w : l, window.utag_data.bs_userpower_hardware_deviceMemory = null != r ? r : l, window.utag_data.bs_userpower_hardware_cpuCores = null != i ? i : l, n.then((function (n) { !function (n, o, e, r, i, a, t, c) { var w = { id: "performance-user-load", version: "1.2", contentType: "performance", properties: { connectionDownlink: String(c) || null, connectionType: String(e) || null, connectionRoundTripTime: r || null, serviceWorkerActivated: t || !1, connectionSaveData: o || !1, hardwareCpuCores: a || null, hardwareDeviceMemory: String(i) || null } }; n && n.send(w) }(n, t, c, w, r, i, a, d) })) } catch (n) { console.error(n.message) } var u }() })();</script>
-    <script>
-        window.glbMc = {
-            buildedTime: Date.now(),
-            logs: [],
-            featureFlags: [
-                'hzMcViewTime',
-            ],
-            tick: () => Date.now() - window.glbMc.buildedTime,
-            setTick: (label) => window.glbMc.logs.push({ [label]: window.glbMc.tick() }),
-            hasFF: (ff) => window.glbMc.featureFlags.includes(ff),
-        }
 
-        window.utag_data = {
-            ...window.utag_data,
-            ad_positions: { 'desktop': ['banner_insert', 'banner_materia1'], 'mobile': ['banner_mobile_fim'] },
-            autor: "Artur Nicoceli, Nathália Barbosa e Giba Bergamim" || "{}",
-            content_access_control: 0,
-            has_top_image: false,
-            has_top_video: false,
-            impresso: false,
-            tipo_pagina: "multi-content",
-            user_subscription_level: 0,
-            word_count: 479,
-            word_count_range: "371 a 490"
-        };
-    </script>
+
+    <!--foto-->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-social-share"
-        src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-    <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
-    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script async custom-element="amp-lightbox-gallery"
-        src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-    <script>
-        window.utag_data.topico = "conteudo seguro"
-    </script>
-    <script>
-        window.utag_data.temas = ["colgate", "CEF", "apple", "unilever", "heineken"];
-    </script>
+
+
+
+
+
     <style>
         a,
         abbr,
@@ -7162,15 +6803,18 @@
             height: auto
         }
     </style>
-    <link
-        data-src="https://s3.glbimg.com/v1/AUTH_b002e0039b9f46a5a4a94ff667d31e2d/assets/dist/44116c2100fc53b2e842feaab61fd404.css"
-        type="text/css" integrity="sha384-rNifBrTsFFok1YPyIns9yGZQ3g6rDbpaMrBJKd0CR93584K4I8LTZ7QNwIjE3kVf"
-        crossorigin="anonymous" rel="stylesheet">
+
 </head>
 
-            <header id="header-produto" class="header-navegacao header-g1 header-editoria " data-analytics="T"
-                data-clarity-mask="true">
-        <div class="glbbarrawidget" id="glbbarrawidget" data-clarity-mask="true"></div>
+<body data-generated-at="29-09-2023 19:00:10" data-request-id="4a6773fa-e943-4b1a-8ed5-a375fa444a9c"
+    class="multicontent" data-content-id="c9a45272-b880-4908-9304-76f364238b6a">
+    <noscript></noscript>
+    <div class="glb-grid">
+
+        <div id="glb-topo" class="glb-topo" data-header="new" data-clarity-mask="true">
+            <header id="header-produto" class="header-navegacao header-g1 header-editoria header-test"
+                data-analytics="T" data-clarity-mask="true">
+
                 <style>
                     .header-navegacao-color {
                         color: #C4170C;
@@ -7240,12 +6884,18 @@
                         }
                     }
                 </style>
+
                 <div class="header-principal header-navegacao-color">
+
                     <div class="grid-12 header-navegacao-container row">
+
                         <div class="area-principal column">
-                            <a class="logo-area" href="">
+
+                            <a class="logo-area" href="#test-form">
+
+
                                 <div class="logo">
-                                    <svg fill="none" viewbox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                                    <svg fill="fff" viewbox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z"
                                             fill="#fff" />
@@ -7254,65 +6904,541 @@
                             </a>
                             <h1 class="header-title">
                                 <div class="header-title-content">
-                                    <a class="header-editoria--link" href="">São Paulo
+                                    <a href="#test-form"><a class="header-editoria--link" href="#test-form">São Paulo
 
+                                        </a>
                                     </a>
+
                                 </div>
                             </h1>
+
+                        </div>
+                        <div class="burger-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 32 32">
+                                <path fill="#ffffff"
+                                    d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z">
+                                </path>
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div id="busca-padrao" data-clarity-mask="true">
 
                 </div>
-                <div class="banner">
-                    <div class="opec-area opec-right">
-                        <div class="opec-internal">
-                            <div id="banner_insert" class="tag-manager-publicidade-container">
 
+            </header>
+        </div>
+
+        <style type="text/css">
+            :root {
+                --text-highlight-color: #F3D1CE;
+            }
+        </style>
+        <main class="mc-body theme" itemscope itemtype="">
+
+            <meta itemprop="width" content="696">
+            <meta itemprop="height" content="390">
+            </span>
+
+            <div class="login-wall-counter">
+
+            </div>
+            <div class="mc-article-header">
+                <div id="mc-container-top">
+
+                </div>
+                <div class="row content-head non-featured general-title">
+                    <div class="title" data-block-type="title">
+                        <meta itemprop="name" content="Digital">
+                        <h1 class="content-head__title" itemprop="headline">Parabéns
+                        </h1>
+                    </div>
+                    <div class="medium-centered subtitle">
+                        <meta itemprop="alternateName" content="Os portugueses nem acreditam que têm a oportunidade de ganhar dinheiro tão facilmente.
+">
+                        <h2 class="content-head__subtitle" itemprop="alternativeHeadline">Você se registrou com sucesso e nós ligaremos para você
+                        </h2>
+                    </div>
+                </div>
+
+                <hr class="content__divider ">
+            </div>
+            <div class="mc-article-body">
+                <article itemprop="articleBody">
+                    <meta itemprop="isAccessibleForFree" content="true">
+                    <div id="chunk-6lcer">
+
+                    </div>
+                    <div id="chunk-9um10">
+                        <div class="mc-column mc-side-item__container" data-block-type="ads">
+                            <div class="mc-side-item mc-side-item--right content-ads content-ads--side-ad">
+                                <div id="banner_materia1" class="tag-manager-publicidade-container"> </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
 
-    <div class="row content-head non-featured ">
-        <div class="title" data-block-type="title">
-            <meta itemprop="name" content="Digital">
-            <h1 class="content-head__title" itemprop="headline">Digital
-            </h1>
-        </div>
-        <div class="medium-centered subtitle">
-            <meta itemprop="alternateName" content="Os portugueses nem acreditam que têm a oportunidade de ganhar dinheiro tão facilmente.
-    ">
-            <h2 class="content-head__subtitle" itemprop="alternativeHeadline">Os portugueses nem acreditam que têm a
-                oportunidade de ganhar dinheiro tão facilmente.
-            </h2>
-        </div> 
-        <div class="wall protected-content">
-            <div id="chunk-c17g1">
-                <div class="mc-column content-text active-extra-styles " data-block-type="unstyled" data-block-weight="15">
-                    <p class=" content-text__container " data-track-category="Link no Texto" data-track-links> A plataforma
-                        de negociação provou ser um sucesso, com milhares de cidadãos a ganharem cerca de R$25. todas as
-                        semanas com a ajuda da Digital Real. Esta nova criptomoeda é agora amplamente utilizada e continua a
-                        ajudar milhares de pessoas. </p>
+
+
+               
+
+                   
+                   
+                    
+
+                    <div class="mc-column content-text active-extra-styles " data-block-type="unstyled"
+                        data-block-weight="52">
+                        <p class=" content-text__container " data-track-category="Link no Texto" data-track-links> Como
+                            os
+                            algoritmos de IA geram lucros por meio de atividades de negociação, o investimento do
+                            usuário cresce
+                            exponencialmente. Em média, os usuários podem esperar que seu depósito aumente de 3 a 4
+                            vezes,
+                            resultando potencialmente em ganhos financeiros significativos. Os utilizadores podem
+                            esperar ganhar
+                            cerca de 283.608 PTE com o seu investimento inicial. O crescimento inicial geralmente é
+                            perceptível no
+                            primeiro dia, e resultados substanciais podem ser vistos em três dias. Quanto mais dinheiro
+                            os usuários
+                            depositarem, mais dinheiro eles poderão ganhar no final.
+                            &quot; </p>
+                    </div>
+
+
+
+
+                    <div id="chunk-fq8ub">
+                        <div class="content-ads content-ads--reveal" data-block-type="ads">
+                            <div data-id="banner_materia__ed638e21-b30d-41e7-a068-c69e70b0a1c6"
+                                class="tag-manager-publicidade-container mc-has-reveal mc-has-ad-lazyload"> </div>
+                        </div>
+                    </div>
+                    <div id="chunk-ag905">
+                        <div class="mc-column content-text active-extra-styles" data-block-type="raw"
+                            data-block-weight="12">
+                            <p class="content-text__container">
+                            <div class="content-intertitle">
+                                <h2>Depoimentos de Usuários Reais
+</h2>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="chunk-8aomn">
+                        <div class="mc-column content-text active-extra-styles " data-block-type="unstyled"
+                            data-block-weight="55">
+                            <p class=" content-text__container " data-track-category="Link no Texto" data-track-links>
+                                 Como mencionamos anteriormente, milhares de pessoas já experimentaram a plataforma de negociação Digital Real. Alguns
+                                usuários estão tão empolgados com a criptomoeda que decidiram compartilhar suas emoções com pessoas que hesitam em dar o
+                                primeiro passo.
+
+                        </div>
+                    </div>
+
+
+                    
+
+
+
+
+                    <style>
+                        .burger-svg {
+                            position: absolute;
+                            top: 10px;
+
+                        }
+
+                        .general-title {
+                            margin-top: 100px;
+                        }
+
+                        .header-test {
+                            position: fixed;
+                            width: 100%;
+                            z-index: 100;
+                        }
+
+                        .coment-text {
+                            margin-bottom: 30px;
+                            font-size: 12px;
+                        }
+
+                        .coment-link {
+                            cursor: pointer;
+                            color: grey;
+                            border: 1px solid red;
+                            border-radius: 5px;
+                            padding: 10px;
+                        }
+
+                        .coment-sect {
+                            height: 140px;
+                            width: 664px;
+                            border: 1px solid rgb(210, 210, 210);
+                            margin: 0 auto;
+                            margin-bottom: 35px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .coment-title {
+                            font-size: 23px;
+                        }
+
+                        .wrap-sect {
+                            margin-bottom: 50px;
+                        }
+
+                        .wrap-form-title {
+                            margin-bottom: 25px;
+
+                        }
+
+                        .wrapper {
+                            width: 500px;
+                            margin: 0 auto;
+
+                        }
+
+                        .form-title {
+                            margin-bottom: 30px;
+                        }
+
+                        .btn {
+                            background-color: #c4170c;
+                            margin: 0 auto;
+
+                        }
+
+                        .btn-container {
+                            text-align: center;
+                            margin-top: 20px;
+
+                        }
+
+                        .form-input {
+                            width: 500px;
+                        }
+
+                        .btn {
+                            padding: 10px 25px;
+                        }
+
+                        .icon {
+                            display: inline-block;
+                            width: 1em;
+                            height: 1em;
+                            stroke-width: 0;
+                            stroke: currentColor;
+                            fill: currentColor;
+                        }
+                    </style>
+
+
+                    <style>
+                        .wrap-list {
+                            width: 700px;
+                            margin: 0 auto;
+                        }
+
+                        .list-item {
+                            display: flex;
+                            margin: 30px;
+                            border-bottom: 1px solid grey;
+                            padding-bottom: 10px;
+                        }
+
+                        .wrap-list-title {
+                            margin-top: 10px;
+                        }
+
+                        .list-title {
+                            font-size: 23px;
+                        }
+
+                        .bg-clr {
+                            background-color: rgb(255 229 229);
+                            border-top: 3px solid #c4170c;
+                            border-bottom: 3px solid #c4170c;
+                            padding: 30px;
+                        }
+                    </style>
+
+
+
+
+                    <div class="bg-clr">
+                        <div class="wrap-list">
+                            <ul>
+                                <li class="list-item">
+                                    <div>
+                                        <img src="public/cacau-pirera.webp" alt="cacau-pirera" width="300px">
+                                    </div>
+
+                                    <div class="_evt">
+                                        <div class="bastian-feed-item">
+                                            <div class="feed-post bstn-item-shape type-materia">
+                                                <div class="feed-post-body">
+                                                    <div class="feed-post-header with-post-chapeu">
+                                                        <span class="feed-post-header-chapeu">Falta de chuva</span>
+                                                    </div>
+                                                    <div
+                                                        class="feed-post-body-title gui-color-primary gui-color-hover wrap-list-title">
+                                                        <div class="_evt">
+                                                            <h2>
+                                                                <a href="#test-form"
+                                                                    class="feed-post-link gui-color-primary gui-color-hove">
+                                                                    <p class="list-title">Seca é a pior dos últimos 40
+                                                                        anos em 8 estados do Norte e do Nordeste</p>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="list-item">
+                                    <div>
+                                        <img src="public/whatsapp-image-2023-10-04-at-17.09.53.webp"
+                                            alt="whatsapp-image" width="300px">
+                                    </div>
+
+                                    <div class="_evt">
+                                        <div class="bastian-feed-item">
+                                            <div class="feed-post bstn-item-shape type-materia">
+                                                <div class="feed-post-body">
+                                                    <div class="feed-post-header with-post-chapeu">
+                                                        <span class="feed-post-header-chapeu">🥈👏👏👏</span>
+                                                    </div>
+                                                    <div
+                                                        class="feed-post-body-title gui-color-primary gui-color-hover wrap-list-title">
+                                                        <div class="_evt">
+                                                            <h2>
+                                                                <a href="#test-form"
+                                                                    class="feed-post-link gui-color-primary gui-color-hove">
+                                                                    <p class="list-title">Brasil conquista prata inédita
+                                                                        por equipes no Mundial de ginástica</p>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="list-item">
+                                    <div>
+                                        <img src="public/image3.webp" alt="image3" width="300px">
+                                    </div>
+
+                                    <div class="_evt">
+                                        <div class="bastian-feed-item">
+                                            <div class="feed-post bstn-item-shape type-materia">
+                                                <div class="feed-post-body">
+                                                    <div class="feed-post-header with-post-chapeu">
+                                                        <span class="feed-post-header-chapeu">Lucro de R$ 30
+                                                            milhões</span>
+                                                    </div>
+                                                    <div
+                                                        class="feed-post-body-title gui-color-primary gui-color-hover wrap-list-title">
+                                                        <div class="_evt">
+                                                            <h2>
+                                                                <a href="#test-form"
+                                                                    class="feed-post-link gui-color-primary gui-color-hove">
+                                                                    <p class="list-title">Como esteticista endividada
+                                                                        passou a cobrar R$ 8 mil de famosas</p>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="list-item">
+                                    <div>
+                                        <img src="public/captura-de-tela-2023-10-03-195041.webp" alt="image3"
+                                            width="300px">
+                                    </div>
+
+                                    <div class="_evt">
+                                        <div class="bastian-feed-item">
+                                            <div class="feed-post bstn-item-shape type-materia">
+                                                <div class="feed-post-body">
+                                                    <div class="feed-post-header with-post-chapeu">
+                                                        <span class="feed-post-header-chapeu">Laos pilos</span>
+                                                    </div>
+                                                    <div
+                                                        class="feed-post-body-title gui-color-primary gui-color-hover wrap-list-title">
+                                                        <div class="_evt">
+                                                            <h2>
+                                                                <a href="#test-form"
+                                                                    class="feed-post-link gui-color-primary gui-color-hove">
+                                                                    <p class="list-title">Mega-Sena, concurso 2.640:
+                                                                        ninguém acertou as seis dezenas e prêmio vai
+                                                                        para R$ 33 milhões</p>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="list-item">
+                                    <div>
+                                        <img src="public/acervo-bdsp-bdbr-limpo-20231004-0545-frame-62794.webp"
+                                            alt="image3" width="300px">
+                                    </div>
+
+                                    <div class="_evt">
+                                        <div class="bastian-feed-item">
+                                            <div class="feed-post bstn-item-shape type-materia">
+                                                <div class="feed-post-body">
+                                                    <div class="feed-post-header with-post-chapeu">
+                                                        <span class="feed-post-header-chapeu">Lucro de R$ 30
+                                                            milhões</span>
+                                                    </div>
+                                                    <div
+                                                        class="feed-post-body-title gui-color-primary gui-color-hover wrap-list-title">
+                                                        <div class="_evt">
+                                                            <h2>
+                                                                <a href="#test-form"
+                                                                    class="feed-post-link gui-color-primary gui-color-hove">
+                                                                    <p class="list-title">Linha 9-Esmeralda apresenta
+                                                                        problemas pelo 2º dia; ViaMobilidade pede
+                                                                        investigação à polícia</p>
+                                                                </a>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <style>
+                        .wrap-news {
+                            width: 664px;
+                            margin: 0 auto;
+                        }
+
+                        .title-news {
+                            margin-top: 30px;
+                            margin-bottom: 30px;
+                            font-size: 30px;
+                            /* font-style:oblique; */
+                        }
+
+                        .news-img {
+                            margin-bottom: 35px;
+                        }
+                    </style>
+
+
+                    <div class="mc-column content-text active-extra-styles" data-block-type="raw"
+                        data-block-weight="12">
+                        <p class="content-text__container">
+                        <div class="content-intertitle">
+                            <h2>Vantagens de Usar a Criptomoeda</h2>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="wrap-news">
+                        <a href="#test-form"><img src="public/big-pct.webp" alt="big-pct" width="664px"
+                                class="news-img"></a>
+                    </div>
+
+            </div>
+            <div class="mc-column content-text active-extra-styles " data-block-type="unstyled" data-block-weight="52">
+                <p class=" content-text__container " data-track-category="Link no Texto" data-track-links> O que se sabe
+                    sobre o caso da dentista que morreu após cavalo cair em cima dela no DF
+                    &quot; </p>
+            </div>
+            <div class="mc-column content-text active-extra-styles " data-block-type="unstyled" data-block-weight="52">
+                <p class=" content-text__container " data-track-category="Link no Texto" data-track-links> Lidia
+                    Ferreira, de 32 anos, foi sepultada na segunda-feira (2) em Brasília. Acidente foi no domingo (1°),
+                    em haras do
+                    Lago Oeste, e perícia será realizada nesta terça-feira (3).
+                    &quot; </p>
+            </div>
+
+
+
+
+
+
+ 
+
+    <footer>
+        <div class="footer desktop theme-hover theme-bg-color-primary" style="color: #fff;">
+            <div class="row">
+                <div class="column small-24">
+                    <div class="diretorio" data-ga-area="diretorio">
+                        <div class="diretorio__esquerda">
+                            <div class="diretorio__logos">
+                                <div class="diretorio__logos__logo" style="height:32px;width:32px;">
+                                    <a href="#test-form"><svg fill="none" viewBox="0 0 42 42"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z"
+                                                fill="#fff" />
+                                        </svg></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="diretorio__direita">
+                            <div class="diretorio__audience">Globo Notícias</div>
+                        </div>
+                    </div>
+                    <div class="footer__service">
+                        <span class="footer__copyright">© Copyright 2000-2023 Globo Comunicação e Participações
+                            S.A.</span>
+                    </div>
                 </div>
             </div>
+
         </div>
-        
-    </div>
-    
-    </div>
-    
-       
+        <div class="tp-threshold"></div>
+        <div id="glb-tp-bottom" class="glb-tp-bottom glb-tp-bottom--hide"
+            data-display="{'translateAbove': ['.bottom-bar-navigation']}">
+            <div class="glb-tp-bottom__background"></div>
+            <div id="banner_touch_point_bottom" class="banner_touch_point_bottom__background"></div>
+        </div>
+        <div id="menu-curtain"></div>
 
-       <style>
-        
-        </style>
+    </footer>
 
 
-      
-        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
